@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: none;
+}
+
+.main-nav {
+    height: 0;
+    cursor: none;
+    backdrop-filter: blur(10px);
+}
+
+.custom-cursor {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    filter: blur(5px);
+    cursor: none;
+}
+
+section {
+    display: flex;
+    height: 100vh;
+    cursor: none;
+    text-align: center;
+    align-items: center;
+    scroll-snap-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: 600;
+    color: #161a1d;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+h1 {
+    color: lavender;
+    font-weight: 900;
+    font-size: 2em;
+    filter: blur(0);
+}
+
+.productdescript{
+    color: #00FF00;
+    font-size: 3em;
+
+}
+#3d-Viewer {
+    justify-content: center;
+    flex: 5;
+    cursor: none;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.left1 {
+    flex: 0;
+    height: 100vh;
+    z-index: 1000;
+    max-width: none;
+    min-width: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    scroll-snap-align: start;
+}
+
+.middle1 {
+    flex: 7;
+    height: 100vh;
+    max-width: 90%;
+    min-width: 0;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    scroll-snap-align: start;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.right1 {
+    flex: 0;
+    height: 100vh;
+    z-index: 0;
+    max-width: 20px;
+    background-color: none;
+    min-width: 0;
+    justify-content: flex-end;
+    text-align: right;
+    padding: 0;
+    scroll-snap-align: start;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    right: auto;
+    cursor: none;
+}
+
+.button {
+    border: none;
+    width: 50px;
+    height: 50px;
+    filter: blur(2px);
+    z-index: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: none;
+    transition: all 0.2s ease-in-out;
+    border-radius: 4em;
+    animation: pulse 7s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { background-color: #ff42ec; }
+    25% { background-color: #00FF00; }
+    50% { background-color: #0000FF; }
+    75% { background-color: #FFFF00; }
+}
+
+.one {
+    background-color: #4268ff;
+    align-items: center;
+    justify-content: center;
+}
+
+.two {
+    background-color: green;
+    align-items: center;
+    justify-content: center;
+}
+
+.three {
+    background-color: pink;
+    align-items: center;
+    justify-content: center;
+}
+
+.four {
+    background-color: orange;
+    align-items: center;
+    justify-content: center;
+}
